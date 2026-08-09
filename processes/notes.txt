@@ -1,0 +1,27 @@
+Program: a file containing a range of information that describes how to strcuture a process at run time
+
+It includes:
+1. Binary format identification 
+	- the format of the executalbe
+	- types: a.out (assembler output) and ELF (Executable and Linking Format)
+2. Machine language instructions
+3. Program entry point address
+4. Data
+5. Symbol and relocation tables
+6. Shared and Dynamic linking information
+etc.,
+
+Memory Layout of a process
+--------------------------
+1. text segment
+	- contains the machine instructions of the program
+	- RO; Sharable
+2. initialized data segment
+	- contains global and static variables that are explicitly initialized
+3. uninitialized data segment (BSS segment)
+	- also called `Block shared by Symbol` segment
+	- initialized to 0 before starting the program
+	- contains global and static variables that are not explicitly initialized
+4. stack
+5. heap
+	- top end of the heap: `program break`
