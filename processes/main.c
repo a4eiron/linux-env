@@ -57,5 +57,7 @@ int main(int argc, char *argv[]) {
     puts(*ep);
   }
 
+  sleep(30);
+
   return 0;
 }
